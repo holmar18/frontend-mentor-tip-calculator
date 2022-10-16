@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+	--primary-strong-cyan: hsl(172, 67%, 45%);
+	--dark-cyan: hsl(183, 100%, 15%);
+	--dark-grayish-cyan: hsl(186, 14%, 43%);
+	--grayish-cyan: hsl(184, 14%, 56%);
+	--light-grayish-cyan: hsl(185, 41%, 84%);
+	--very-ligh-grayish-cyan: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
+
+	--weight: 700;
+
+	--primary-font: 'Poppins', sans-serif;
+	--primary-title-font: 'Roboto Mono', monospace;
+	--digits-font: 'Dosis', sans-serif;
+	--normal-font: 'Kanit', sans-serif;
+
+	--mobile-size: 375px;
+	--desktop-size: 1440;
+}
+
+body {
+	margin: 0;
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	background-color: var(--light-grayish-cyan);
+}
+
+h2 {
+	font-family: var(--primary-title-font);
+	margin: 0;
+	height: 2.7rem;
+	color: var(--dark-grayish-cyan);
+	letter-spacing: 0.5rem;
+}

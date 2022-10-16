@@ -1,0 +1,70 @@
+.input-container {
+	padding: 2rem;
+}
+
+.input-icons {
+	display: flex;
+	align-items: center;
+	height: 2.3rem;
+	margin: 0 auto 0 auto;
+	border-radius: 0.4rem;
+	background-color: var(--very-ligh-grayish-cyan);
+}
+
+.label-container {
+	display: flex;
+	margin: 0 auto;
+}
+
+.label-container label {
+	font-family: var(--digits-font);
+	color: var(--grayish-cyan);
+	font-size: 1rem;
+}
+
+.label-container label:nth-child(2) {
+	font-family: var(--normal-font);
+	color: red;
+	font-size: 1rem;
+	margin-left: auto;
+}
+
+.input-field {
+	height: 2rem;
+	width: 100%;
+	text-align: right;
+	font-family: var(--digits-font);
+	font-size: 1.9rem;
+	color: var(--dark-cyan);
+	border: 0;
+	background-color: var(--very-ligh-grayish-cyan);
+	border-radius: 0.4rem;
+	padding: 0 0.6rem;
+}
+
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.icon {
+	position: absolute;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: var(--light-grayish-cyan);
+}
+
+.input-field::placeholder {
+	color: var(--light-grayish-cyan);
+}
+
+.input-field:focus {
+	outline-color: hsla(161, 96%, 43%, 1);
+	color: var(--dark-cyan);
+}
+
+.input-field-error {
+	border: 2px solid rgb(221, 35, 28);
+	outline: rgb(221, 35, 28) !important;
+	color: var(--dark-cyan);
+}

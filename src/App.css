@@ -1,0 +1,33 @@
+@media only screen and (min-width: 691px) {
+	.main_container {
+		display: flex;
+		width: 70%;
+		height: 49vh;
+		margin: 0 auto;
+		background-color: var(--white);
+		border-radius: 2rem;
+		filter: drop-shadow(2px 8px 8px #000);
+	}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 690px) {
+	.main_container {
+		display: flex;
+		width: 95%;
+		height: 60vh;
+		margin: 0 auto;
+		background-color: var(--white);
+		border-radius: 2rem;
+		filter: drop-shadow(2px 8px 8px #000);
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.main_container {
+		width: 100%;
+		height: 100vh;
+		background-color: var(--white);
+		border-radius: 2rem 2rem 0 0;
+		filter: drop-shadow(2px 8px 8px #000);
+	}
+}
