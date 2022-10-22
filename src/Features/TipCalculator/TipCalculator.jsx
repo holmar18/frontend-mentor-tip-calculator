@@ -21,6 +21,8 @@ const TipCalculator = () => {
 		total,
 		tipAmount,
 		handlReset,
+		billInp,
+		pplInp,
 	} = useTipCalculator();
 	return (
 		<>
@@ -28,6 +30,7 @@ const TipCalculator = () => {
 				<FormInput
 					Icon={<BiDollar className='icon' />}
 					defaultVal={'0'}
+					value={billInp}
 					label='Bill'
 					type='number'
 					handleInput={handleInput}
@@ -80,6 +83,7 @@ const TipCalculator = () => {
 				<FormInput
 					Icon={<BsPersonFill className='icon' />}
 					defaultVal={'0'}
+					value={pplInp}
 					label='Number of people'
 					type='number'
 					handleInput={handleInput}

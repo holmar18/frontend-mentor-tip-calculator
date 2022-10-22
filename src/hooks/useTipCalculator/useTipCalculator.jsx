@@ -133,6 +133,8 @@ const useTipCalculator = () => {
 		total: total,
 		tipAmount: tipAmount,
 		handlReset: handlReset,
+		billInp: billInp,
+		pplInp: pplInp,
 	};
 };
 

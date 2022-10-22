@@ -11,6 +11,7 @@ const FormInput = ({
 	error,
 	errorMsg,
 	style,
+	value,
 }) => {
 	return (
 		<div className='input-container' style={style && style}>
@@ -26,6 +27,7 @@ const FormInput = ({
 					className={error ? 'input-field input-field-error' : 'input-field'}
 					placeholder={defaultVal}
 					type={type}
+					value={value ? value : ''}
 					onChange={(e) => handleInput(errType, e.target.value)}
 				/>
 			</div>
