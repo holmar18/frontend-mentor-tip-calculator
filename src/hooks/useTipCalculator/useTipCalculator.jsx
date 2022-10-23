@@ -21,9 +21,14 @@ const useTipCalculator = () => {
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
+		// If custom input is cleared the tip amount is 0.50$ this if fixes that
+		if (!custom) {
+			setTipAmount(0);
+		}
 		handleOutput();
 	}, [billInp, pplInp, custom, active]);
 
+	// Resets all the stats
 	const handlReset = () => {
 		setBillInp(0);
 		setPplInp(0);
@@ -135,6 +140,7 @@ const useTipCalculator = () => {
 		handlReset: handlReset,
 		billInp: billInp,
 		pplInp: pplInp,
+		custom: custom,
 	};
 };
 

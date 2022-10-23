@@ -23,6 +23,7 @@ const TipCalculator = () => {
 		handlReset,
 		billInp,
 		pplInp,
+		custom,
 	} = useTipCalculator();
 	return (
 		<>
@@ -73,6 +74,7 @@ const TipCalculator = () => {
 								<FormInput
 									defaultVal={'custom'}
 									type='number'
+									value={custom}
 									handleInput={handleInput}
 									errType='custom'
 								/>
